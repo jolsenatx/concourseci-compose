@@ -24,8 +24,7 @@ services:
       CONCOURSE_POSTGRES_DATA_SOURCE: |-
         postgres://concourse:changeme@concourse-db:5432/concourse?sslmode=disable
     dns:
-      - 8.8.8.8
-      - 8.8.4.4
+      - 172.101.249.1
     restart: on-failure:10
 
   concourse-worker:
