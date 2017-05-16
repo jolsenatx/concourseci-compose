@@ -39,10 +39,9 @@ services:
       CONCOURSE_BAGGAGECLAIM_ADDRESS: concourse-worker
       CONCOURSE_GARDEN_FORWARD_ADDRESS: concourse-worker
       CONCOURSE_BAGGAGECLAIM_FORWARD_ADDRESS: concourse-worker
-      CONCOURSE_GARDEN_DNS_SERVER: 8.8.8.8
+      CONCOURSE_GARDEN_DNS_SERVER: 172.101.249.1
     dns:
-      - 8.8.8.8
-      - 8.8.4.4
+      - 172.101.249.1
     restart: on-failure:10
 
   keys:
